@@ -32,7 +32,8 @@ public class ComputeTax {
 		// Compute tax
 		double tax = 0;
 		
-		if (status == 0) { // Compute tax for single filers
+		if (status == 0) { 
+			// Compute tax for single filers
 			if (income <= 8350) {
 				tax = income * 0.10;
 			} else if (income <= 33950) {
@@ -53,12 +54,16 @@ public class ComputeTax {
 						+ (332950 - 171550) * 0.33 + (income - 372950) * 0.35;
  			}
 		} else if (status == 1) {
+			// Compute tax for married filing jointly
 			
 		} else if (status == 2) {
+			// Compute tax for married filing separately
 			
 		} else if (status == 3) {
+			// Compute tax for head of household
 			
 		} else {
+			// Display wrong status
 			System.out.println("Error: invalid status");
 			System.exit(0);
 		}

@@ -21,10 +21,7 @@ public class ThripleIntegerSorting {
 		System.out.print("Enter three integers: ");
 		int num1 = input.nextInt();
 		int num2 = input.nextInt();
-		int num3 = input.nextInt();
-		
-		
-		
+		int num3 = input.nextInt();		
 		
 		// Sort the three numbers
 		if (num1 > num2) {
